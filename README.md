@@ -42,7 +42,7 @@ Dans ce projet, nous allons répondre ensemble à trois questions majeures pour 
 ## 📐 Standardisation (➖1️⃣ ➤ 0️⃣ ➤ 1️⃣)
 
 <div align="center">
-   <img src="img/img1.png" style="width:600px; height:auto;"/>
+   <img src="img/img3.png" style="width:600px; height:auto;"/>
 </div>
 
 ### 1. Qu’est-ce que c’est ?
@@ -51,7 +51,7 @@ Dans ce projet, nous allons répondre ensemble à trois questions majeures pour 
 - Cela permet de ramener toutes les variables à *une échelle commune, sans modifier leur position relative* par rapport à l'origine des données.
 
 <div align="center">
-   <img src="img/img3.png" style="width:600px; height:auto;"/>
+   <img src="img/img1.png" style="width:600px; height:auto;"/>
 </div>
 
 ### 2. Pourquoi l’utiliser ?
@@ -74,7 +74,7 @@ La standardisation est particulièrement utile pour les algorithmes sensibles à
 ## 📏 Normalisation (0️⃣ ➤ 1️⃣)
 
 <div align="center">
-   <img src="img/img2.png" style="width:600px; height:auto;"/>
+   <img src="img/img4.png" style="width:600px; height:auto;"/>
 </div>
 
 ### 1. Qu’est-ce que c’est ?
@@ -85,7 +85,7 @@ La standardisation est particulièrement utile pour les algorithmes sensibles à
 - Dans ce projet, nous avons utilisé la technique du **Min-Max Feature Scaling**, qui consiste à transformer les valeurs d'une caractéristique pour les ramener dans *un intervalle fixe compris entre 0 et 1*.
 
 <div align="center">
-   <img src="img/img4.png" style="width:600px; height:auto;"/>
+   <img src="img/img2.png" style="width:600px; height:auto;"/>
 </div>
 
 ### 2. Pourquoi l’utiliser ?
