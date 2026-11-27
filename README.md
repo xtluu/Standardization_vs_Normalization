@@ -158,9 +158,10 @@ python3 src/main.py
 
 ## 📚 Documentation
 
-- [Standardisation](https://www.geeksforgeeks.org/python/how-to-standardize-data-in-a-pandas-dataframe/)
-- [Standard Deviation](https://www.geeksforgeeks.org/maths/standard-deviation-formula/)
-- [Normalization](https://www.geeksforgeeks.org/python/data-normalization-with-pandas/)
+- https://builtin.com/data-science/when-and-why-standardize-your-data
+- https://www.geeksforgeeks.org/python/how-to-standardize-data-in-a-pandas-dataframe/
+- https://www.geeksforgeeks.org/maths/standard-deviation-formula/
+- https://www.geeksforgeeks.org/python/data-normalization-with-pandas/
 
 ---
 
