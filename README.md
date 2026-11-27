@@ -50,6 +50,10 @@ Dans ce projet, nous allons répondre ensemble à trois questions majeures pour 
 - La **Standardisation** transforme chaque colonne numérique de sorte qu’elle présente *une moyenne de 0 et un écart-type de 1*.
 - Cela permet de ramener toutes les variables à *une échelle commune, sans modifier leur position relative* par rapport à l'origine des données.
 
+<div align="center">
+   <img src="img/img3.png" style="width:600px; height:auto;"/>
+</div>
+
 ### 2. Pourquoi l’utiliser ?
 
 - Évite qu'une variable ayant des valeurs numériques plus élevées domine les autres.
@@ -79,6 +83,10 @@ La standardisation est particulièrement utile pour les algorithmes sensibles à
    - Maximum Absolute Scaling
    - Min-Max Feature Scaling
 - Dans ce projet, nous avons utilisé la technique du **Min-Max Feature Scaling**, qui consiste à transformer les valeurs d'une caractéristique pour les ramener dans *un intervalle fixe compris entre 0 et 1*.
+
+<div align="center">
+   <img src="img/img4.png" style="width:600px; height:auto;"/>
+</div>
 
 ### 2. Pourquoi l’utiliser ?
 
