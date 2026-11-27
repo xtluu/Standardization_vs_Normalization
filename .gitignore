@@ -1,6 +1,10 @@
-myenv
+# Virtual environment
+myenv/
 
-src/__pycache__/
+# Python
+__pycache__/
+*.py[cod]
 
-config/.env
-config/database.init
+# Environment / secrets
+.env
+database.init

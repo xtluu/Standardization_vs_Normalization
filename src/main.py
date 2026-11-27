@@ -1,7 +1,7 @@
 from data_access import csv_to_db, query_execution
 
-from standardization import data_standardization, standardize_visualizations
-from normalization import data_normalization, normalize_visualizations
+from standardization import data_standardization, standardize_visualization
+from normalization import data_normalization, normalize_visualization
 
 # ====================================================================================
 
@@ -24,8 +24,8 @@ def main() -> None:
 
         # Convert target from text to numbers
         data["knight"] = data["knight"].map({
-            "Jedi": 1,
-            "Sith": 0
+            "Sith": 0,
+            "Jedi": 1
         })
 
         print("\n=== Original Data ===")
@@ -36,14 +36,14 @@ def main() -> None:
         standardized_data = data_standardization(data.iloc[:, :-1])
         standardized_data["knight"] = data.iloc[:, -1]
 
-        standardize_visualizations(data, standardized_data)
+        standardize_visualization(data, standardized_data)
 
         # --------------------------------------------
 
         normalized_data = data_normalization(data.iloc[:, :-1])
         normalized_data["knight"] = data.iloc[:, -1]
 
-        normalize_visualizations(data, normalized_data)
+        normalize_visualization(data, normalized_data)
 
     except Exception as e:
         print(f"Error [main()]: {e}")

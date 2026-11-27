@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # ====================================================================================
 
 
-def standardize_visualizations(
+def standardize_visualization(
     df1: pd.DataFrame,
     df2: pd.DataFrame,
 ) -> None:
@@ -102,20 +102,19 @@ def standardize_visualizations(
 
 
 def data_standardization(df: pd.DataFrame) -> pd.DataFrame:
-    """Standardizes the numerical features
-    of a DataFrame using StandardScaler."""
+    """Z-score standardization"""
 
     try:
         # Standardization
         #
-        sc = StandardScaler()
-        scaled = sc.fit_transform(df)
-        X = pd.DataFrame(scaled, columns=df.columns)
+        standardized_df = df.apply(
+            lambda x: (x - x.mean()) / x.std()
+        )
 
         print("\n=== Standardized Data ===")
-        print(X.head())
+        print(standardized_df.head())
 
-        return X
+        return standardized_df
 
     except Exception as e:
         print(f"Error [data_standardization()]: {e}")

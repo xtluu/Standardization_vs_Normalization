@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # ====================================================================================
 
 
-def normalize_visualizations(
+def normalize_visualization(
     df1: pd.DataFrame,
     df2: pd.DataFrame,
 ) -> None:
@@ -100,28 +100,27 @@ def normalize_visualizations(
 
 
 def data_normalization(df: pd.DataFrame) -> pd.DataFrame:
-    """Normalize the numerical features
-    of a DataFrame using min-max scaling."""
+    """Min-max scaling"""
 
     try:
-        scaled = df.copy()
+        normalized_df = df.copy()
 
-        for column in scaled.columns:
-            min_value = scaled[column].min()
-            max_value = scaled[column].max()
+        for column in normalized_df.columns:
+            min_value = normalized_df[column].min()
+            max_value = normalized_df[column].max()
 
             if max_value != min_value:
-                scaled[column] = (
-                    (scaled[column] - min_value) /
+                normalized_df[column] = (
+                    (normalized_df[column] - min_value) /
                     (max_value - min_value)
                 )
             else:
-                scaled[column] = 0.0
+                normalized_df[column] = 0.0
 
         print("\n=== Normalized Data ===")
-        print(scaled.head())
+        print(normalized_df.head())
 
-        return scaled
+        return normalized_df
 
     except Exception as e:
         print(f"Error [data_normalization()]: {e}")
