@@ -100,7 +100,7 @@ def normalize_visualization(
 
 
 def data_normalization(df: pd.DataFrame) -> pd.DataFrame:
-    """Min-max scaling"""
+    """Min-max approach"""
 
     try:
         normalized_df = df.copy()
