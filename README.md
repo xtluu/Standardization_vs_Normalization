@@ -77,7 +77,7 @@ La standardisation est particulièrement utile pour les algorithmes sensibles à
    <img src="img/img2.png" style="width:600px; height:auto;"/>
 </div>
 
-### 1. Qu’est-ce que c’est ?
+**1. Qu’est-ce que c’est ?**
 
 - Comme la **Standardisation**, la **Normalisation** permet de ramener toutes les variables à une échelle commune afin de faciliter leur comparaison. Cependant, elle regroupe différentes techniques de mise à l'échelle, chacune adaptée à des besoins spécifiques, telles que:
    - Maximum Absolute Scaling
